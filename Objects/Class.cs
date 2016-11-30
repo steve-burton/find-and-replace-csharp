@@ -1,17 +1,21 @@
 using System.Collections.Generic;
+using System;
 
 namespace FindReplace.Objects
 {
 	public class UserInput
 	{
-		public string FindAndReplace(string userInput, string findWord, string replaceWord)
+		public static string FindAndReplace(string userInput, string findWord, string replaceWord)
 		{
-			string replacementString = userInput;
-			if (userInput.ToUpper() == findWord.ToUpper())
+			string[] replacementWords = userInput.Split();
+			for (int index = 0; index < replacementWords.Length; index++)
 			{
-				replacementString = replaceWord;
+				if (replacementWords[index].ToUpper() == findWord.ToUpper())
+				{
+					replacementWords[index] = replaceWord;
+				}
 			}
-			return replacementString;
+			return string.Join(" ", replacementWords);
 		}
 	}
 }

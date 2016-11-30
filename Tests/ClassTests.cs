@@ -7,14 +7,20 @@ namespace FindReplace.Objects
     [Fact]
     public void FindAndReplace_SingleWordReplace_Goodbye()
     {
-      UserInput newInput = new UserInput();
-      Assert.Equal("Goodbye", newInput.FindAndReplace("Hello", "Hello", "Goodbye"));
+      //UserInput newInput = new UserInput();
+      Assert.Equal("Goodbye", UserInput.FindAndReplace("Hello", "Hello", "Goodbye"));
     }
     [Fact]
     public void FindAndReplace_IgnoreCase_Goodbye()
     {
-      UserInput newInput = new UserInput();
-      Assert.Equal("Goodbye", newInput.FindAndReplace("Hello", "hello", "Goodbye"));
+      //UserInput newInput = new UserInput();
+      Assert.Equal("Goodbye", UserInput.FindAndReplace("Hello", "hello", "Goodbye"));
+    }
+    [Fact]
+    public void FindAndReplace_MultipleWordInput_GoodbyeWorld()
+    {
+      //UserInput newInput = new UserInput();
+      Assert.Equal("Goodbye world", UserInput.FindAndReplace("Hello world", "hello", "Goodbye"));
     }
   }
 }
