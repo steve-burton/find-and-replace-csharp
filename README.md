@@ -1,30 +1,33 @@
-#{Project Title}
+#Find And Replace
 ===========================
 
 _{Brief Details}, {Date}_
 
-_By Levi Bibo_
-
-##Description
-
-_{Extended Details}_
-
-_[Link to site.](https://levibibo.github.io/{site-name})_
+_By Levi Bibo, Steve Burton_
 
 ##Specifications
 
 *{Specs}
 
-##Support and contact details
+Take a user input string word and replace it with another word.
+* Input: "Hello"
+* Output: "Goodbye"
 
-Check out my GitHub account: [Levi Bibo.](https://www.github.com/levibibo)
+Ignore case sensitivity.
+* Input: "Hello"
+* Output: "Goodbye"
 
-##Technologies used
+Take a user input string of multiple words and replace one word that the user chooses.
+* Input: "Hello world"
+* Output: "Goodbye world"
 
-_This site was built using {technologies}_
+Ensure that partial matches are accounted for when a word is replaced
+* Input: "Goodbye good world"
+* Output "badbye bad world"
+
 
 ##License
 
 _Created under an MIT license._
 
-_Copyright (c) {2016} Levi Bibo_
+_Copyright (c) {2016} Levi Bibo, Steve Burton_
