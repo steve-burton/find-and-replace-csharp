@@ -1,12 +1,17 @@
 using System.Collections.Generic;
 
-namespace NameSpace.Objects
+namespace FindReplace.Objects
 {
-	public class NewClass
+	public class UserInput
 	{
-		public NewClass()
+		public string FindAndReplace(string userInput, string findWord, string replaceWord)
 		{
-
+			string replacementString = userInput;
+			if (userInput.ToUpper() == findWord.ToUpper())
+			{
+				replacementString = replaceWord;
+			}
+			return replacementString;
 		}
 	}
 }

@@ -1,8 +1,8 @@
 using Nancy;
 using System.Collections.Generic;
-using NameSpace.Objects;
+using FindReplace.Objects;
 
-namespace NameSpace
+namespace FindReplace
 {
 	public class HomeModule : NancyModule
 	{
