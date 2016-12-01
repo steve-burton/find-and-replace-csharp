@@ -22,5 +22,11 @@ namespace FindReplace.Objects
       //UserInput newInput = new UserInput();
       Assert.Equal("Goodbye world", UserInput.FindAndReplace("Hello world", "hello", "Goodbye"));
     }
+    [Fact]
+    public void FindAndReplace_PartialWordReplace_BadbyeWorld()
+    {
+      //UserInput newInput = new UserInput();
+      Assert.Equal("badbye bad world", UserInput.FindAndReplace("Goodbye good world", "good", "bad"));
+    }
   }
 }
