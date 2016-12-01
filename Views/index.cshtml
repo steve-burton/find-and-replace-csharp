@@ -9,7 +9,24 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					
+					<h1>Find and Replace</h1>
+					<form action="/" method="post">
+						<label for="userString">Enter your sentence</label>
+						<input type="text" name="userString" placeholder="Your Sentence">
+						<label for="findWord">Enter the search word</label>
+						<input type="text" name="findWord" placeholder="Search Word">
+						<label for="replaceWord">Enter the replacement word</label>
+						<input type="text" name="replaceWord" placeholder="Replace Word">
+						<button type="submit">Run</button>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					@if (Model["HasSentence"] == "true")
+					{
+						<p>@Model["ReplacedSentence"]</p>
+					}
 				</div>
 			</div>
 		</div>
